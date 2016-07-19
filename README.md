@@ -28,3 +28,5 @@ itemList = [
 bower install
 npm install
 ```
+
+![Screenshot](example.png)
