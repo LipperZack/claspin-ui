@@ -1,0 +1,28 @@
+{
+  "name": "claspin-ui",
+  "description": "Inspired by the Facebook Monitoring Tool Claspin",
+  "main": "claspin.js",
+  "authors": [
+    "LipperZack"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "claspin",
+    "facebook",
+    "angular",
+    "directive",
+    "ui",
+    "grid",
+    "rect",
+    "mosaic",
+    "hotmap"
+  ],
+  "homepage": "https://github.com/LipperZack/claspin-ui",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
