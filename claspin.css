@@ -1,0 +1,29 @@
+
+
+.claspin.selection-applied .item { opacity: 0.9 }
+.claspin.selection-applied .item.selected { opacity: 1.0 }
+
+.claspin .item {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #009F30;
+}
+
+.claspin .empty {
+  border:none
+}
+
+.claspin .row {
+  margin: 0px 0px 1px 0px;
+  float: left;
+}
+
+.claspin {
+  clear: both;
+}
+
+.claspin-wrap::after {
+  content: "";
+  display: block; 
+  clear: both;
+}

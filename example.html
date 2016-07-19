@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="claspin-example">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="claspin.css" type="text/css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css" type="text/css" />
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="node_modules/values.js/index.js"></script>
+    <script src="claspin.js"></script>
+    <script type="text/javascript">
+      angular.module('claspin-example', [
+        'ui.bootstrap',
+        'claspin'
+      ]).controller('ExampleController', function($scope) {
+        $scope.itemList = [
+          { index: '07', status: 0 },
+          { index: '08', status: 0 },
+          { index: '09', status: 5 },
+          { index: '10', status: 0 },
+          { index: '11', status: 0 },
+          { index: '12', status: 0 },
+          { index: '13', status: 1 },
+          { index: '14', status: 1 },
+          { index: '15', status: 1 },
+          { index: '16', status: 1 },
+          { index: '17', status: 1 },
+          { index: '18', status: 1 },
+          { index: '19', status: 0 },
+          { index: '20', status: 0 },
+          { index: '21', status: 2 },
+          { index: '22', status: 4 },
+          { index: '23', status: 9 },
+          { index: '24', status: 10 },
+          { index: '25', status: 4 },
+          { index: '26', status: 4 },
+          { index: '27', status: 7 },
+          { index: '28', status: 3 },
+          { index: '29', status: 5 },
+          { index: '30', status: 13 },
+          { index: '31', status: 0 },
+          { index: '32', status: 1 },
+          { index: '33', status: 2 },
+          { index: '34', status: 7 },
+          { index: '35', status: 17 },
+          { index: '36', status: 47 },
+          { index: '37', status: 14 },
+          { index: '38', status: 30 },
+          { index: '39', status: 16 },
+          { index: '40', status: 3 },
+          { index: '41', status: 1 },
+          { index: '42', status: 6 },
+          { index: '43', status: 6 },
+          { index: '44', status: 5 },
+          { index: '45', status: 11 },
+          { index: '46', status: 8 },
+          { index: '47', status: 2 },
+          { index: '48', status: 1 },
+          { index: '49', status: 1 },
+          { index: '50', status: 0 },
+          { index: '51', status: 0 },
+          { index: '52', status: 1 },
+          { index: '53', status: 1 },
+          { index: '54', status: 14 },
+          { index: '55', status: 8 },
+          { index: '56', status: 3 },
+          { index: '66', status: 0 },
+          { index: '88', status: 8 }
+        ];
+        
+        $scope.selectedItem = null;
+      });
+    </script>
+    <title>Events Calendar Example</title>
+  </head>
+  <body ng-controller="ExampleController">
+    <div style="padding: 3cm">
+      <claspin item-list="itemList" selected-item="selectedItem">
+      </claspin>
+      <div>
+        Selected: {{selectedItem}}
+      </div>
+    </div>
+  </body>
+</html>

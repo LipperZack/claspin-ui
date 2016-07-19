@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/LipperZack/claspin-ui/issues"
   },
-  "homepage": "https://github.com/LipperZack/claspin-ui"
+  "homepage": "https://github.com/LipperZack/claspin-ui",
+  "dependencies": {
+    "values.js": "^1.0.3"
+  }
 }
